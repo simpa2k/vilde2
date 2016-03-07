@@ -12,6 +12,10 @@ var main = document.getElementById('main');
 // Declaring variable to store window.setInterval in, making it possible to clear later.
 var animate;
 
+// Storing header
+
+var header = document.getElementById('header');
+
 // Storing heading buttons.
 var shows = document.getElementById('shows');
 var about = document.getElementById('about');
@@ -74,6 +78,25 @@ hideEarlierGigs();
 function stopScroll() {
     clearInterval(animate);
 }*/
+
+// Function to set header's z-index to 1 when the page has been scrollen sufficiently
+
+function fixHeader() {
+
+    var mainBoundingClientRect = main.getBoundingClientRect();
+    var mainY = mainBoundingClientRect.top;
+    var windowHeight = window.innerHeight;
+    
+    if (mainY == 60) {
+        console.log(mainBoundingClientRect);
+        header.style.zIndex = "1";
+        header.style.display = "fixed";
+    } else {
+        header.style.zIndex = "0";
+        header.style.display = "absolute"
+    } 
+
+}
 
 // Function to determine an element's position on the y-axis.
 function getY(element) {
@@ -147,6 +170,7 @@ function fadeOutGigs() {
 //toTheTop.addEventListener('click', toTheTopClick, false);
 main.addEventListener('click', headingClick, false);
 //window.addEventListener('scroll', toTheTopDisplay, false);
+window.addEventListener('scroll', fixHeader, false);
 earlierGigsDropDownButton.addEventListener('click', hideOrDisplayEarlierGigs, false);
 
 /*for(var i = 0; i < gigs.length; i++) {

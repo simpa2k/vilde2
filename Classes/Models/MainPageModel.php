@@ -22,7 +22,7 @@ Class MainPageModel {
 
 		$this->_dateUtilities = new DateUtilities();
 
-		$this->_template = "templates/mainpage.php";
+		$this->_template = "templates/alternatemainpage.php";
 
 	}
 
