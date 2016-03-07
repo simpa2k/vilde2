@@ -94,9 +94,7 @@ body {
         display: inline-block;
         width: 20%;
         font-size: 20pt;
-        /*margin-bottom: 10%;*/
-        /*color: #D0D7DA;*/
-        /*color: #f44843;*/
+        margin-bottom: 1%;
         color: #F44843;
         transition: all .5s ease;
         font-family: "Raleway";
@@ -134,12 +132,11 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 6%;
     text-align: center;
     background-color: rgba(38, 38, 38, 0.7);
 
 }
-
-
 
 .heading-link {
     display: inline-block;
