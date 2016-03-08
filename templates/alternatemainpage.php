@@ -14,9 +14,7 @@
 	</head>
 	<body>
 	
-	<div id="background">
-	
-	</div>
+	<div id="background"></div>
 		
 	<div class="container-fluid">
 		<nav>
