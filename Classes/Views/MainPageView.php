@@ -10,6 +10,12 @@ Class MainPageView extends View {
 
 	}
 
+	private function red($content) {
+
+		return "<span class='red'>$content</span>";
+
+	}
+
 	private function printDropCap($letter) {
 
 		return "<span class='drop-cap'>$letter</span>";
@@ -123,18 +129,20 @@ Class MainPageView extends View {
 
 		$members = $this->_model->getMembers();
 
-		echo "<ul class='list-group'>";
-
+		//echo "<ul class='list-group'>";
+		$this->openRow();
 		foreach($members as $member) {
 
-			$instruments = $this->orangeBrown($member->Instrument);
+			$name = "$member->Firstname $member->Lastname";
+			$instruments = $this->red($member->Instrument);
 
-			/*$this->openRow();
-			$this->printColumn("5", "p", "$member->Firstname $member->Lastname - $member->Instrument", array('class' => 'large-text'));
-			$this->closeRow();*/
-			$this->printElement("li", "$member->Firstname $member->Lastname - $instruments", array('class' => 'list-group-item large-text'));
+			
+			$this->printColumn("4", "div", "<p class='large-text'>$name - $instruments</p>", array('class' => 'member'));
+			
+			//$this->printElement("li", "$member->Firstname $member->Lastname - $instruments", array('class' => 'list-group-item large-text'));
 
 		}
+		$this->closeRow();
 
 		echo "</ul>";
 

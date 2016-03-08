@@ -179,11 +179,26 @@ body {
 
 }
 
-
 .news-item {
 
     background-color: #262626;
     color: #f44843;
+    padding: 2% 2% 2% 2%;
+    margin-bottom: 1%;
+    border-radius: 2px;
+
+}
+
+.news-item p {
+
+    font-size: 30pt;
+
+}
+
+#shows .list-group-item, #contact .list-group-item {
+
+    background-color: #262626 !important;
+    color: #F44843;
 
 }
 
@@ -192,9 +207,25 @@ body {
     background-color: #262626;
 }
 
-#contact {
+.member {
+
+    background-color: #f3f3f1;
+    padding: 1% 1% 1% 1%;
+    border-radius: 2px;
+    border: 1px solid #f3f3f1;
+    bottom: 0;
+
+}
+
+#music-and-media {
 
     background-color: #262626;
+
+}
+
+#contact {
+
+    
 
 }
 
@@ -249,24 +280,15 @@ body {
     padding-top: 1%;
 }
 
-.list-group {
-
-    margin-bottom: 0% !important;
-
-}
-
-.list-group-item {
-
-    background-color: #262626 !important;
-    color: #F44843;
-
-}
-
 .orange-brown {
 
-    /*color: #1a9797;*/
-    /*color: #EFA056;*/
     color: #FA9663;
+
+}
+
+.red {
+
+    color: #f44843;
 
 }
 

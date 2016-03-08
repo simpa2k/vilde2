@@ -33,20 +33,29 @@
 		<div id="news" class="section">
 			
 			<div class="row">
-				<div class="col-md-12"><h1 class="section-heading">Nyheter</h1></div>
+				<div class="col-md-1"></div>
+				<div class="col-md-4"><h1 class="section-heading">Nyheter</h1></div>
 			</div>
 
 			<div class="row">
+				<div class="col-md-1"></div>
 				<div class="col-md-4">
-					<div>
-						<li id="next-gig" class="list-group-item">News <span class="orange-brown">item</span>!</li>
-					</div>
-				</div>
-				<div class="col-md-4"><div>
-					<li id="next-gig" class="list-group-item">News <span class="orange-brown">item</span>!</li>
+					<div class="news-item">
+						<p>Nu jävlar händer det! <span class="orange-brown">Vilde</span> spelar både här och där och det tycker vi att ni ska få veta!</p>
 					</div>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-md-1"></div>
+			
+				<div class="col-md-4">
+					<div class="news-item">
+						<p>Fler <span class="orange-brown">saker</span>!</p>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 		<div class="row">
@@ -61,7 +70,7 @@
 
 
 				<div class="row">
-					<div class="col-md-12"><h2 class="text-left">Vilde är:</h2></div>
+					<div class="col-md-12"><h2 class="text-center red">Vilde är:</h2></div>
 				</div>
 				<?php $this->listMembers(); ?>
 			</div>
@@ -74,9 +83,11 @@
 			<?php $this->displayGigs(); ?>
 		</div>
 
-		<div id="music-and-media" class="section">
-			<div class="row">
-				<div class="col-md-12"><h1 class="section-heading">Musik och media</h1></div>
+		<div class="row">
+			<div id="music-and-media" class="section">
+				<div class="row">
+					<div class="col-md-12"><h1 class="section-heading">Musik och media</h1></div>
+				</div>
 			</div>
 		</div>
 
