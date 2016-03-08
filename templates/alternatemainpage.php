@@ -37,8 +37,15 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-3"><div><li id="next-gig" class="list-group-item">News item!</li></div></div>
-				<div class="col-md-3"><div><li id="next-gig" class="list-group-item">News item!</li></div></div>
+				<div class="col-md-4">
+					<div>
+						<li id="next-gig" class="list-group-item">News <span class="orange-brown">item</span>!</li>
+					</div>
+				</div>
+				<div class="col-md-4"><div>
+					<li id="next-gig" class="list-group-item">News <span class="orange-brown">item</span>!</li>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
