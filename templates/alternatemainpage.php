@@ -29,29 +29,42 @@
 
 	<div id="main" class="container-fluid">
 
+	<div class="row">
+		<div id="news" class="section">
+			
+			<div class="row">
+				<div class="col-md-12"><h1 class="section-heading">Nyheter</h1></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3"><div><li id="next-gig" class="list-group-item">News item!</li></div></div>
+				<div class="col-md-3"><div><li id="next-gig" class="list-group-item">News item!</li></div></div>
+			</div>
+		</div>
+	</div>
+		<div class="row">
+			<div id="about" class="section">
+				<div class="row">
+					<div class="col-md-12"><h1 class="section-heading">Om Vilde</h1></div>
+				</div>
+
+				<div class="col-md-6"><?php $this->printDescription(); ?></div>
+
+				<div class="col-md-6"><?php $this->printReviews(); ?></div>
+
+
+				<div class="row">
+					<div class="col-md-12"><h2 class="text-left">Vilde är:</h2></div>
+				</div>
+				<?php $this->listMembers(); ?>
+			</div>
+		</div>
+
 		<div id="shows" class="section">
 			<div class="row">
 				<div class="col-md-12"><h1 class="section-heading">Konserter</h1></div>
 			</div>
 			<?php $this->displayGigs(); ?>
-		</div>
-
-		<div class="row">
-		<div id="about" class="section">
-			<div class="row">
-				<div class="col-md-12"><h1 class="section-heading">Om Vilde</h1></div>
-			</div>
-
-			<div class="col-md-6"><?php $this->printDescription(); ?></div>
-
-			<div class="col-md-6"><?php $this->printReviews(); ?></div>
-
-
-			<div class="row">
-				<div class="col-md-12"><h2 class="text-left">Vilde är:</h2></div>
-			</div>
-			<?php $this->listMembers(); ?>
-		</div>
 		</div>
 
 		<div id="music-and-media" class="section">
