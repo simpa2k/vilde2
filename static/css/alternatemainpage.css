@@ -415,9 +415,10 @@ body {
 
 blockquote {
 
-    border-left: 5px solid #f44843 !important;
+    border: 1px solid #f3f3f1 !important;
     color: #ffffff;
     font-family: "Raleway";
+    margin-bottom: 0% !important;
 
 }
 
