@@ -204,15 +204,15 @@ body {
 
 #about {
     clear: right;
-    /*background-color: #262626;*/
+    background-color: #262626;
 }
 
 .member {
 
-    background-color: #ffffff;
+    background-color: #f3f3f1;
     padding: 1% 1% 1% 1%;
     border-radius: 2px;
-    border: 1px solid #262626;
+    border: 1px solid #f3f3f1;
     bottom: 0;
 
 }
@@ -389,11 +389,7 @@ body {
 #description {
 
     float: left;
-    background-color: #262626;
-    color: #f44843;
-    padding: 2% 2% 2% 2%;
-    margin-bottom: 1%;
-    border-radius: 2px;
+    color: #ffffff;
 
 }
 
@@ -420,9 +416,7 @@ body {
 blockquote {
 
     border-left: 5px solid #f44843 !important;
-    border-radius: 2px;
-    color: #262626;
-    background-color: #ffffff;
+    color: #ffffff;
     font-family: "Lato";
 
 }
