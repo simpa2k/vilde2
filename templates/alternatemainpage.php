@@ -19,9 +19,9 @@
 	<div class="container-fluid">
 		<nav>
 			<div id="header" class="row">
-				<h3 class="heading">KONSERTER</h3>
+				<h3 class="heading">NYHETER</h3>
 				<h3 class="heading">OM VILDE</h3>
-				<h3 class="heading">MUSIK OCH MEDIA</h3>
+				<h3 class="heading">KONSERTER</h3>
 				<h3 class="heading">KONTAKT</h3>
 			</div>
 		</nav>

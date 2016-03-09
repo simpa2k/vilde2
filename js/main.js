@@ -18,9 +18,10 @@ window.onload = function() {
     var header = document.getElementById('header');
 
     // Storing heading buttons.
+    var news = document.getElementById('news');
     var shows = document.getElementById('shows');
     var about = document.getElementById('about');
-    var musicAndMedia = document.getElementById('music-and-media');
+    //var musicAndMedia = document.getElementById('music-and-media');
     var kontakt = document.getElementById('contact');
 
     //var gigs = document.getElementsByClassName('gig');
@@ -140,19 +141,23 @@ window.onload = function() {
     // in order scroll down to it.
     function headingClick(e) {
         var item = e.target;
+        var headerHeight = header.getBoundingClientRect().height;
         if (item.className == "heading") {
             switch(item.innerHTML) {
+                case 'NYHETER':
+                    window.scrollTo(getSectionHeadingX(), getY(news) - headerHeight);
+                break;
                 case 'KONSERTER':
-                    window.scrollTo(getSectionHeadingX(), getY(shows));
+                    window.scrollTo(getSectionHeadingX(), getY(shows) - headerHeight);
                 break;
                 case 'OM VILDE':
-                    window.scrollTo(getSectionHeadingX(), getY(about));
+                    window.scrollTo(getSectionHeadingX(), getY(about) - headerHeight);
                 break;
-                case 'MUSIK OCH MEDIA':
+                /*case 'MUSIK OCH MEDIA':
                     window.scrollTo(getSectionHeadingX(), getY(musicAndMedia));
-                break;
+                break;*/
                 case 'KONTAKT':
-                    window.scrollTo(getSectionHeadingX(), getY(kontakt));
+                    window.scrollTo(getSectionHeadingX(), getY(kontakt) - headerHeight);
                 break;
             }
         }
@@ -187,7 +192,7 @@ window.onload = function() {
     }*/
 
     // Adding event listeners
-    main.addEventListener('click', headingClick, false);
+    header.addEventListener('click', headingClick, false);
     window.addEventListener('scroll', headerPositionListener, false);
     earlierGigsDropDownButton.addEventListener('click', hideOrDisplayEarlierGigs, false);
 
