@@ -80,13 +80,13 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<!--<div class="row">
 			<div id="music-and-media" class="section">
 				<div class="row">
 					<div class="col-md-12"><h1 class="section-heading">Musik och media</h1></div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 		<div class="row">
 			<div id="contact" class="section">
