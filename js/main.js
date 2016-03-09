@@ -23,7 +23,7 @@ window.onload = function() {
     var musicAndMedia = document.getElementById('music-and-media');
     var kontakt = document.getElementById('contact');
 
-    var gigs = document.getElementsByClassName('gig');
+    //var gigs = document.getElementsByClassName('gig');
 
     // Initializing variables associated with the to the top button.
     //var toTheTop = document.getElementById('to-top');
@@ -88,8 +88,6 @@ window.onload = function() {
         return y;
     }
 
-
-
     function fixateElementPositionTop(element, topOffset) {
 
         element.style.zIndex = "10";
@@ -127,24 +125,6 @@ window.onload = function() {
         }
 
     }
-
-    function restoreHeaderPosition() {
-
-        
-        
-        var headerBoundingClientRect = header.getBoundingClientRect();
-        var headerBottomY = headerBoundingClientRect.bottom;
-
-
-        //console.log(headerBottomY);
-        //console.log("headerbottom: " + headerBottomY + ", mainY: " + mainY);
-        console.log(window.scrollY);
-
-
-
-    }
-
-
 
     // Function to get the x-value of the text sections. This is to prevent mobile devices from landing the viewport
     // to far to the left when a heading is clicked while zoomed in.
@@ -196,7 +176,7 @@ window.onload = function() {
         }
     }
 
-    function fadeOutGigs() {
+    /*function fadeOutGigs() {
 
         for(var i = 0; i < gigs.length; i++) {
 
@@ -204,14 +184,11 @@ window.onload = function() {
 
         }
 
-    }
+    }*/
 
     // Adding event listeners
-    //toTheTop.addEventListener('click', toTheTopClick, false);
     main.addEventListener('click', headingClick, false);
-    //window.addEventListener('scroll', toTheTopDisplay, false);
     window.addEventListener('scroll', headerPositionListener, false);
-    //window.addEventListener('scroll', restoreHeaderPosition, false);
     earlierGigsDropDownButton.addEventListener('click', hideOrDisplayEarlierGigs, false);
 
     /*for(var i = 0; i < gigs.length; i++) {

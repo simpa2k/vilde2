@@ -29,35 +29,30 @@
 
 	<div id="main" class="container-fluid">
 
-	<div class="row">
-		<div id="news" class="section">
-			
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-4"><h1 class="section-heading">Nyheter</h1></div>
-			</div>
+		<div class="row">
+			<div id="news" class="section">
+				
+				<div class="row">
+					<div class="col-md-12"><h1 class="section-heading">Nyheter</h1></div>
+				</div>
 
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-4">
-					<div class="news-item">
-						<p>Nu jävlar händer det! <span class="orange-brown">Vilde</span> spelar både här och där och det tycker vi att ni ska få veta!</p>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="news-item">
+							<p>Nu jävlar händer det! <span class="orange-brown">Vilde</span> spelar både här och där och det tycker vi att ni ska få veta!</p>
+						</div>
+					</div>
+				
+					<div class="col-md-6">
+						<div class="news-item">
+							<p>Fler <span class="orange-brown">saker</span>!</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="row">
-				<div class="col-md-1"></div>
-			
-				<div class="col-md-4">
-					<div class="news-item">
-						<p>Fler <span class="orange-brown">saker</span>!</p>
-					</div>
-				</div>
 			</div>
-
 		</div>
-	</div>
+
 		<div class="row">
 			<div id="about" class="section">
 				<div class="row">
@@ -76,11 +71,13 @@
 			</div>
 		</div>
 
-		<div id="shows" class="section">
-			<div class="row">
-				<div class="col-md-12"><h1 class="section-heading">Konserter</h1></div>
+		<div class="row">
+			<div id="shows" class="section">
+				<div class="row">
+					<div class="col-md-12"><h1 class="section-heading">Konserter</h1></div>
+				</div>
+				<?php $this->displayGigs(); ?>
 			</div>
-			<?php $this->displayGigs(); ?>
 		</div>
 
 		<div class="row">

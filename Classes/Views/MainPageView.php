@@ -55,7 +55,7 @@ Class MainPageView extends View {
 			$this->printColumn("10",
 								"li", 
 								"$gigDate - $venue, $gig->City", 
-								array('class' => 'lato gig upcoming-gig list-group-item'));
+								array('class' => 'lato upcoming-gig list-group-item'));
 			$this->closeRow();
 			//echo "</ul>";
 
@@ -84,7 +84,7 @@ Class MainPageView extends View {
 				$venue = $this->orangeBrown($gig->Venue);
 
 				$this->openRow();
-				$this->printColumn("3", "li", "$gigDate - $venue, $gig->City", array('class' => 'lato gig list-group-item dropdown-menu-item'));
+				$this->printColumn("3", "li", "$gigDate - $venue, $gig->City", array('class' => 'lato list-group-item dropdown-menu-item'));
 				$this->closeRow();
 
 			}
