@@ -36,23 +36,14 @@
 					<div class="col-md-12"><h1 class="section-heading">Nyheter</h1></div>
 				</div>
 
-				<!--<div class="news-item">
-					<p>Nu jävlar händer det! <span class="orange-brown">Vilde</span> spelar både här och där och det tycker vi att ni ska få veta!</p>
-				</div>-->
-
 				<div class="row">
 					<div id="news-item-container">
-					<!--<div class="col-md-6">-->
 						<div class="news-item">
 							<p>Nu jävlar händer det! <span class="orange-brown">Vilde</span> spelar både här och där och det tycker vi att ni ska få veta! Mer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMe</p>
 						</div>
-					<!--</div>-->
-				
-					<!--<div class="col-md-6">-->
 						<div class="news-item">
 							<p>Fler <span class="orange-brown">saker</span>!</p>
 						</div>
-					<!--</div>-->
 					</div>
 				</div>
 
@@ -87,14 +78,6 @@
 				<?php $this->listMembers(); ?>
 			</div>
 		</div>
-
-		<!--<div class="row">
-			<div id="music-and-media" class="section">
-				<div class="row">
-					<div class="col-md-12"><h1 class="section-heading">Musik och media</h1></div>
-				</div>
-			</div>
-		</div>-->
 
 		<div class="row">
 			<div id="contact" class="section">

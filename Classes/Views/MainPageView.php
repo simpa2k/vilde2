@@ -33,7 +33,7 @@ Class MainPageView extends View {
 						   "li", 
 						   "$gigDate - $venue, $nextGig->City &raquo", 
 						   array('id' 		=> 'next-gig',
-								 'class' 	=> 'text-center lato gig list-group-item'));
+								 'class' 	=> 'text-center gig list-group-item'));
 		$this->closeRow();
 
 	}
@@ -46,18 +46,13 @@ Class MainPageView extends View {
 
 			$gigDate = $this->_model->getDateAsDayAndMonth($gig);
 			$venue = $this->orangeBrown($gig->Venue);
-			/*$this->openRow();
-			$this->printColumn("2", "li", "$gig->Date, $gig->Venue", array('class' => 'upcoming-gig list-group-item'));
-			$this->closeRow();*/
-			//echo "<ul class='list-group'>";
-			
+
 			$this->openRow();
 			$this->printColumn("12",
 								"li", 
 								"$gigDate - $venue, $gig->City", 
-								array('class' => 'text-center lato gig upcoming-gig list-group-item'));
+								array('class' => 'text-center gig upcoming-gig list-group-item'));
 			$this->closeRow();
-			//echo "</ul>";
 
 		}
 
@@ -84,7 +79,7 @@ Class MainPageView extends View {
 				$venue = $this->orangeBrown($gig->Venue);
 
 				$this->openRow();
-				$this->printColumn("3", "li", "$gigDate - $venue, $gig->City", array('class' => 'lato gig list-group-item dropdown-menu-item'));
+				$this->printColumn("3", "li", "$gigDate - $venue, $gig->City", array('class' => 'gig list-group-item dropdown-menu-item'));
 				$this->closeRow();
 
 			}
@@ -118,7 +113,6 @@ Class MainPageView extends View {
 
 		foreach($reviews as $review) {
 
-			//$this->printElement("blockquote", "<p>$review->Review</p><p>$review->Info</p>");
 			echo "<blockquote><p class='review'>$review->Review</p><footer class='review-info'>$review->Info</footer></blockquote>";
 
 		}
@@ -129,17 +123,13 @@ Class MainPageView extends View {
 
 		$members = $this->_model->getMembers();
 
-		//echo "<ul class='list-group'>";
 		$this->openRow();
 		foreach($members as $member) {
 
 			$name = "$member->Firstname $member->Lastname";
 			$instruments = $this->red($member->Instrument);
-
 			
 			$this->printColumn("4", "div", "<p class='large-text'>$name - $instruments</p>", array('class' => 'member'));
-			
-			//$this->printElement("li", "$member->Firstname $member->Lastname - $instruments", array('class' => 'list-group-item large-text'));
 
 		}
 		$this->closeRow();
