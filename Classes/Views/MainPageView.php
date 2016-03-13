@@ -29,11 +29,11 @@ Class MainPageView extends View {
 		$venue = $this->orangeBrown($nextGig->Venue);
 
 		$this->openRow();
-		$this->printColumn("10",
+		$this->printColumn("12",
 						   "li", 
 						   "$gigDate - $venue, $nextGig->City &raquo", 
 						   array('id' 		=> 'next-gig',
-								 'class' 	=> 'lato list-group-item'));
+								 'class' 	=> 'text-center lato gig list-group-item'));
 		$this->closeRow();
 
 	}
@@ -52,10 +52,10 @@ Class MainPageView extends View {
 			//echo "<ul class='list-group'>";
 			
 			$this->openRow();
-			$this->printColumn("10",
+			$this->printColumn("12",
 								"li", 
 								"$gigDate - $venue, $gig->City", 
-								array('class' => 'lato upcoming-gig list-group-item'));
+								array('class' => 'text-center lato gig upcoming-gig list-group-item'));
 			$this->closeRow();
 			//echo "</ul>";
 
@@ -84,7 +84,7 @@ Class MainPageView extends View {
 				$venue = $this->orangeBrown($gig->Venue);
 
 				$this->openRow();
-				$this->printColumn("3", "li", "$gigDate - $venue, $gig->City", array('class' => 'lato list-group-item dropdown-menu-item'));
+				$this->printColumn("3", "li", "$gigDate - $venue, $gig->City", array('class' => 'lato gig list-group-item dropdown-menu-item'));
 				$this->closeRow();
 
 			}
