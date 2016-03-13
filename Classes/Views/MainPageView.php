@@ -29,7 +29,7 @@ Class MainPageView extends View {
 		$venue = $this->orangeBrown($nextGig->Venue);
 
 		$this->openRow();
-		$this->printColumn("10",
+		$this->printColumn("12",
 						   "li", 
 						   "$gigDate - $venue, $nextGig->City &raquo", 
 						   array('id' 		=> 'next-gig',
@@ -47,7 +47,7 @@ Class MainPageView extends View {
 			$venue = $this->orangeBrown($gig->Venue);
 
 			$this->openRow();
-			$this->printColumn("10",
+			$this->printColumn("12",
 								"li", 
 								"$gigDate - $venue, $gig->City", 
 

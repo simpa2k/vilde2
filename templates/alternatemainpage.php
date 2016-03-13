@@ -37,9 +37,7 @@
 				</div>
 
 				<div class="row">
-
 					<div id="news-item-container">
-
 						<div class="news-item">
 							<p>Nu jävlar händer det! <span class="orange-brown">Vilde</span> spelar både här och där och det tycker vi att ni ska få veta!</p>
 						</div>
@@ -50,6 +48,15 @@
 					</div>
 				</div>
 
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="shows" class="section">
+				<div class="row">
+					<div class="col-md-12"><h1 class="text-center section-heading">Konserter</h1></div>
+				</div>
+				<?php $this->displayGigs(); ?>
 			</div>
 		</div>
 
@@ -68,15 +75,6 @@
 					<div class="col-md-12"><h2 class="text-center red">Vilde är:</h2></div>
 				</div>
 				<?php $this->listMembers(); ?>
-			</div>
-		</div>
-
-		<div class="row">
-			<div id="shows" class="section">
-				<div class="row">
-					<div class="col-md-12"><h1 class="section-heading">Konserter</h1></div>
-				</div>
-				<?php $this->displayGigs(); ?>
 			</div>
 		</div>
 
