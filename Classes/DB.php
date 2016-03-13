@@ -20,6 +20,8 @@ class DB {
 
             die($e->getMessage());
 
+        }
+
     }
     
     public static function getInstance() {
