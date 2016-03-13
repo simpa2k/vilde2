@@ -43,7 +43,7 @@
 						</div>
 
 						<div class="news-item">
-							<p>Fler <span class="orange-brown">saker</span>!</p>
+							<p>Nu jävlar händer det! <span class="orange-brown">Vilde</span> spelar både här och där och det tycker vi att ni ska få veta!</p>
 						</div>
 					</div>
 				</div>

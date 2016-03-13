@@ -29,12 +29,12 @@ Class MainPageView extends View {
 		$venue = $this->orangeBrown($nextGig->Venue);
 
 		$this->openRow();
-		$this->printColumn("12",
+		$this->printColumn("10",
 						   "li", 
 						   "$gigDate - $venue, $nextGig->City &raquo", 
 						   array('id' 		=> 'next-gig',
-
 								 'class' 	=> 'text-center gig list-group-item'));
+		$this->closeRow();
 	}
 
 	private function displayUpcomingGigs() {
@@ -47,12 +47,10 @@ Class MainPageView extends View {
 			$venue = $this->orangeBrown($gig->Venue);
 
 			$this->openRow();
-			$this->printColumn("12",
+			$this->printColumn("10",
 								"li", 
 								"$gigDate - $venue, $gig->City", 
-
 								array('class' => 'text-center gig upcoming-gig list-group-item'));
-
 			$this->closeRow();
 
 		}
@@ -80,8 +78,8 @@ Class MainPageView extends View {
 				$venue = $this->orangeBrown($gig->Venue);
 
 				$this->openRow();
-
 				$this->printColumn("3", "li", "$gigDate - $venue, $gig->City", array('class' => 'gig list-group-item dropdown-menu-item'));
+				$this->closeRow();
 
 			}
 
