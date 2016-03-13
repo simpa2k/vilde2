@@ -11,7 +11,7 @@ Class MainPageModel {
 	private $_template;
 
 	public function __construct() {
-
+		
 		$this->_db = DB::getInstance();
 		
 		$this->_gigs = $this->_db->getAll('konserter')->results();

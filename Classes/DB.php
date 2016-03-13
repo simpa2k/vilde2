@@ -9,13 +9,13 @@ class DB {
             $_count = 0;
             
     private function __construct() {
-        
+
         try {
             
             $this->_pdo = new PDO('mysql:host=' . Config::get('mysql/host') . ';dbname=' . Config::get('mysql/db') . ';charset=utf8',
                                    Config::get('mysql/username'), 
                                    Config::get('mysql/password'));
-            
+
         } catch(PDOException $e) {
 
             die($e->getMessage());
