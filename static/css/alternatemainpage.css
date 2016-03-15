@@ -139,8 +139,23 @@ body {
     max-height: 60px;
     text-align: center;
     background-color: rgba(38, 38, 38, 0.9);
+
+}
+
+#heading-container {
+
+    border-top: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    height: 100%;
     padding-top: 1.5%;
 
+}
+
+#social-media-container {
+
+    border-top: 1px solid #eaeaea;
+    height: 100%;
+    padding-top: 0.5%;
 }
 
 .heading-link {

@@ -89,6 +89,20 @@ window.onload = function() {
         return y;
     }
 
+    function moveBorderDown(element) {
+
+        element.style.borderTop = "none";
+        element.style.borderBottom = "1px solid #eaeaea";
+
+    }
+
+    function moveBorderUp(element) {
+
+        element.style.borderTop = "1px solid #eaeaea";
+        element.style.borderBottom = "";        
+
+    }
+
     function fixateElementPositionTop(element, topOffset) {
 
         element.style.zIndex = "10";
@@ -110,6 +124,9 @@ window.onload = function() {
     // Function to fixate header to top of window when scrolling down past it and then pop it back when scrolling above it
     function headerPositionListener() {
         
+        var headingSection = document.getElementById('heading-container');
+        var socialMediaSection = document.getElementById('social-media-container');
+
         var headerHeight = header.getBoundingClientRect().height;
         var mainY = getY(main);
 
@@ -118,10 +135,14 @@ window.onload = function() {
         if (topOfWindowAlignsWithTopOfHeader) {
 
             fixateElementPositionTop(header, 0);
+            moveBorderDown(headingSection);
+            moveBorderDown(socialMediaSection);
 
         } else {
 
             fixateElementPositionBottom(header, mainY);
+            moveBorderUp(headingSection);
+            moveBorderUp(socialMediaSection);
 
         }
 

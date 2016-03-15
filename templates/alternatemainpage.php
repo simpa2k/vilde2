@@ -19,10 +19,17 @@
 	<div class="container-fluid">
 		<nav>
 			<div id="header" class="row">
-				<h3 class="heading">NYHETER</h3>
-				<h3 class="heading">OM VILDE</h3>
-				<h3 class="heading">KONSERTER</h3>
-				<h3 class="heading">KONTAKT</h3>
+				<div id="heading-container" class="col-md-9">
+					<h3 class="heading">NYHETER</h3>
+					<h3 class="heading">OM VILDE</h3>
+					<h3 class="heading">KONSERTER</h3>
+					<h3 class="heading">KONTAKT</h3>
+				</div>
+				<div id="social-media-container" class="col-md-3">
+				    <a id="facebook" href="http://www.facebook.com/spoketikoket"><img src="static/images/sociala_medier/facebooklogga_liten.jpg"></a>
+                    <a id="soundcloud" href="http://www.soundcloud.com/sp-ket-i-k-ket"><img src="static/images/sociala_medier/soundcloudlogga_liten.jpg"></a>
+                    <a id="youtube" href="https://www.youtube.com/channel/UCBnvUMnm1tU1O2ioTnUNJNw"><img src="static/images/sociala_medier/youtubelogga_liten.jpg"></a>
+                </div>
 			</div>
 		</nav>
 	</div>
