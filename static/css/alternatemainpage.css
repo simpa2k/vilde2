@@ -63,6 +63,7 @@ body {
     font-size: 14pt;
     color: #D0D7DA;
     transition: all .5s ease;
+    height: 100%;
 }
 
 /* For devices bigger than an iPhone 4s, might need to up this minimum a bit, check samsung device widths */
@@ -91,6 +92,7 @@ body {
     }
 
     .heading {
+        margin: 0% 0% 0% 0% !important;
         display: inline-block;
         width: 20%;
         font-size: 20pt;
@@ -137,6 +139,7 @@ body {
     max-height: 60px;
     text-align: center;
     background-color: rgba(38, 38, 38, 0.9);
+    padding-top: 1.5%;
 
 }
 
