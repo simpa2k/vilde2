@@ -50,9 +50,9 @@
 							<p>Nu jävlar händer det! <span class="orange-brown">Vilde</span> spelar både här och där och det tycker vi att ni ska få veta! Mer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMer textMe</p>
 						</div>
 					
-						<div class="news-item">
+						<!--<div class="news-item">
 							<p>Fler <span class="orange-brown">saker</span>!</p>
-						</div>
+						</div>-->
 					
 					</div>
 				</div>
