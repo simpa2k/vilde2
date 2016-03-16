@@ -61,17 +61,6 @@
 		</div>
 
 		<div class="row">
-			<div id="shows" class="section">
-				<div class="row">
-					<div class="col-md-12"><h1 class="text-center section-heading">Konserter</h1></div>
-				</div>
-				<div class="gig-parent">
-					<?php $this->displayGigs(); ?>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
 			<div id="about" class="section">
 				<div class="row">
 					<div class="col-md-12"><h1 class="section-heading">Om Vilde</h1></div>
@@ -86,6 +75,17 @@
 					<div class="col-md-12"><h2 class="text-center red">Vilde är:</h2></div>
 				</div>
 				<?php $this->listMembers(); ?>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="shows" class="section">
+				<div class="row">
+					<div class="col-md-12"><h1 class="text-center section-heading">Konserter</h1></div>
+				</div>
+				<div class="gig-parent">
+					<?php $this->displayGigs(); ?>
+				</div>
 			</div>
 		</div>
 

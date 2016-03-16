@@ -194,6 +194,11 @@ body {
 #news {
 
     background-color: #f3f3f1;
+    background-image: url(/static/images/tree.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 850px;
 
 }
 
