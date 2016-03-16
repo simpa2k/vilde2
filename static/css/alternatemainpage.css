@@ -144,8 +144,8 @@ body {
 
 #heading-container {
 
-    border-top: 1px solid #eaeaea;
-    border-right: 1px solid #eaeaea;
+    border-top: 0.5px solid #eaeaea;
+    border-right: 0.5px solid #eaeaea;
     height: 100%;
     padding-top: 1.5%;
 
@@ -153,7 +153,7 @@ body {
 
 #social-media-container {
 
-    border-top: 1px solid #eaeaea;
+    border-top: 0.5px solid #eaeaea;
     height: 100%;
     padding-top: 0.5%;
 }
