@@ -66,9 +66,9 @@
 					<div class="col-md-12"><h1 class="section-heading">Om Vilde</h1></div>
 				</div>
 
-				<div class="col-md-6"><?php $this->printDescription(); ?></div>
+				<div class="col-md-12"><?php $this->printDescription(); ?></div>
 
-				<div class="col-md-6"><?php $this->printReviews(); ?></div>
+				<!--<div class="col-md-6"><?php $this->printReviews(); ?></div>-->
 
 
 				<div class="row">
