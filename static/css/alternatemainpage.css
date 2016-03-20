@@ -208,7 +208,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    height: 1000px;
+    height: 1300px; 
     padding: 13% 10% 0% 20%;
 
 }
@@ -262,7 +262,7 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    height: 870px;
+    height: 1300px;
 }
 
 .member {
