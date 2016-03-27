@@ -14,14 +14,13 @@ window.onload = function() {
     var animate;
 
     // Storing header
-
     var header = document.getElementById('header');
 
-    // Storing heading buttons.
+    // Storing sections.
     var news = document.getElementById('news');
     var shows = document.getElementById('shows');
     var about = document.getElementById('about');
-    //var musicAndMedia = document.getElementById('music-and-media');
+    var musicAndMedia = document.getElementById('music-and-media');
     var kontakt = document.getElementById('contact');
 
     //var gigs = document.getElementsByClassName('gig');
@@ -39,6 +38,9 @@ window.onload = function() {
 
     // Hiding earlier gigs
     hideEarlierGigs();
+
+    // Setting height of the news and about sections dynamically so that the background images scale properly
+    setHeightOfNewsAndAboutSections();
 
     /* 
      * 
@@ -148,6 +150,21 @@ window.onload = function() {
 
     }
 
+    function setHeightOfNewsAndAboutSections() {
+
+        var sectionHeightToWidthRatio = 0.685;
+
+        var newsWidth = news.getBoundingClientRect().width;
+        var newsHeight = newsWidth * sectionHeightToWidthRatio;
+
+        var aboutWidth = about.getBoundingClientRect().width;
+        var aboutHeight = aboutWidth * sectionHeightToWidthRatio;
+
+        news.style.height = String(newsHeight) + "px";
+        about.style.height = String(aboutHeight) + "px";
+
+    }
+
     // Function to get the x-value of the text sections. This is to prevent mobile devices from landing the viewport
     // to far to the left when a heading is clicked while zoomed in.
     function getSectionHeadingX() {
@@ -174,9 +191,9 @@ window.onload = function() {
                 case 'OM VILDE':
                     window.scrollTo(getSectionHeadingX(), getY(about) - headerHeight);
                 break;
-                /*case 'MUSIK OCH MEDIA':
+                case 'MUSIK OCH MEDIA':
                     window.scrollTo(getSectionHeadingX(), getY(musicAndMedia));
-                break;*/
+                break;
                 case 'KONTAKT':
                     window.scrollTo(getSectionHeadingX(), getY(kontakt) - headerHeight);
                 break;
@@ -215,6 +232,7 @@ window.onload = function() {
     // Adding event listeners
     header.addEventListener('click', headingClick, false);
     window.addEventListener('scroll', headerPositionListener, false);
+    window.addEventListener('resize', setHeightOfNewsAndAboutSections, false)
     earlierGigsDropDownButton.addEventListener('click', hideOrDisplayEarlierGigs, false);
 
     /*for(var i = 0; i < gigs.length; i++) {

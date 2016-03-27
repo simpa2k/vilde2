@@ -72,7 +72,7 @@ body {
 @media (min-width: 641px) {
     #background {
         background: rgba( 0, 0, 0, 0 ) 
-                    url(/static/images/vildebackgroundlogo.jpg) no-repeat 50% 0 / cover;
+                    url(/static/images/vildebackgroundlogo_medium.jpg) no-repeat 50% 0 / cover;
         width: 100%;
         height: 100%;
         top: 0;
@@ -96,9 +96,9 @@ body {
     .heading {
         margin: 0% 0% 0% 0% !important;
         display: inline-block;
-        width: 20%;
+        /*width: 20%;*/
         font-family: "Cabin Sketch" !important;
-        font-size: 20pt;
+        font-size: 15pt;
         margin-bottom: 1%;
         color: #F44843;
         transition: all .5s ease;
@@ -204,12 +204,12 @@ body {
 #news {
 
     background-color: #f3f3f1;
-    background-image: url(/static/images/tree.png);
+    background-image: url(/static/images/tree_medium.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    height: 1000px;
-    padding: 13% 10% 0% 20%;
+    /*height: 1000px;*/
+    padding: 10% 10% 0% 15%;
 
 }
 
@@ -240,7 +240,7 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
 
 }
 
-#shows, #contact {
+#shows, #contact, #music-and-media {
 
     padding-left: 5%;
     padding-right: 5%;
@@ -258,26 +258,33 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
     /*clear: right;*/
     padding: 12% 20% 0% 20%;
     background-color: #0d0d0d;
-    background-image: url(/static/images/rootsthin.png);
+    background-image: url(/static/images/rootsthin_medium.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    height: 870px;
+    /*height: 870px;*/
 }
 
 .member {
 
-    background-color: #f3f3f1;
-    padding: 1% 1% 1% 1%;
-    border-radius: 2px;
-    border: 1px solid #f3f3f1;
-    bottom: 0;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    padding: 2% 2% 2% 2%;
+    border-radius: 3px;
+    border: 1px solid #333333;
 
 }
 
 #music-and-media {
 
     background-color: #262626;
+
+}
+
+#music-and-media iframe {
+
+    display: block;
+    margin-bottom: 5%;
 
 }
 
@@ -462,6 +469,7 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
     padding: 2% 2% 2% 2%;
     border-radius: 3px;
     border: 1px solid #333333;
+    margin-bottom: 2%;
 
 }
 

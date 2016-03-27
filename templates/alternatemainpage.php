@@ -19,14 +19,15 @@
 	<div class="container-fluid">
 		<nav>
 			<div id="header" class="row">
-				<div id="heading-container" class="col-md-10 col-s-10">
+				<div id="heading-container" class="col-md-10">
 					<h3 class="heading">NYHETER</h3>
 					<h3 class="heading">OM VILDE</h3>
 					<h3 class="heading">KONSERTER</h3>
+					<h3 class="heading">MUSIK OCH MEDIA</h3>
 					<h3 class="heading">KONTAKT</h3>
 				</div>
-				<div id="social-media-container" class="col-md-2 col-s-2">
-					<a id="soundcloud" href="http://www.soundcloud.com/sp-ket-i-k-ket"><img src="static/images/sociala_medier/soundcloudlogga_36.png"></a>
+				<div id="social-media-container" class="col-md-2">
+					<a id="soundcloud" href="https://soundcloud.com/vildeland"><img src="static/images/sociala_medier/soundcloudlogga_36.png"></a>
 				    <a id="facebook" href="http://www.facebook.com/spoketikoket"><img src="static/images/sociala_medier/facebooklogga_29.png"></a>
 					<a id="youtube" href="https://www.youtube.com/channel/UCBnvUMnm1tU1O2ioTnUNJNw"><img src="static/images/sociala_medier/youtubelogga_35.png"></a>
                 </div>
@@ -69,17 +70,15 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-12"><?php $this->listMembers(); ?></div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-12">
 						<blockquote>
 							<p>Vilde släpper in världen i sin svenska folkmusik. De påminner om de där gatumusikanterna som man snubblade över någonstans i Europa. Gatumusikanterna som man aldrig glömde.</p>
 							<footer class="review-info">UNT 2011-08-10</footer>
-						</blockquote>
-					</div>
-			
-					<div class="col-md-6">
-						<blockquote>
-							<p>Vilde är en talangfull och lekfull folkmusiktrio som levererar bra egna varianter av både ovanliga och välkända låtar och egna kompositioner. Med kombinationen klarinett, nyckelharpa och gitarr har de ett eget sound och man hör i deras spel influenserna av traditionellt låtspel, jazz och rock.</p>
-							<footer class="review-info">Sonia Sahlström och Håkan Larsson, om ‘Trollstigen’, April 2011</footer>
 						</blockquote>
 					</div>
 				</div>
@@ -105,13 +104,20 @@
 			</div>
 		</div>
 
-		<!--<div class="row">
+		<div class="row">
 			<div id="music-and-media" class="section">
 				<div class="row">
 					<div class="col-md-12"><h1 class="section-heading">Musik och media</h1></div>
+
+					<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/238951938&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+					<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89855069&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+					<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129517659&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
 				</div>
 			</div>
-		</div>-->
+		</div>
 
 		<div class="row">
 			<div id="contact" class="section">
