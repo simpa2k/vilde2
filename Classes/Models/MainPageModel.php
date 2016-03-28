@@ -46,7 +46,7 @@ Class MainPageModel {
 
     	foreach($this->_gigs as $gig) {
 
-    		if($gig->Date > $date) {
+    		if($gig->Date >= $date) {
 
     			$gigsToBePlayed[] = $gig;
 
