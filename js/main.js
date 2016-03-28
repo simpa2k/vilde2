@@ -152,13 +152,14 @@ window.onload = function() {
 
     function setHeightOfNewsAndAboutSections() {
 
-        var sectionHeightToWidthRatio = 0.685;
+        var newsHeightToWidthRatio = 0.59;
+        var aboutHeightToWidthRatio = 0.685;
 
         var newsWidth = news.getBoundingClientRect().width;
-        var newsHeight = newsWidth * sectionHeightToWidthRatio;
+        var newsHeight = newsWidth * newsHeightToWidthRatio;
 
         var aboutWidth = about.getBoundingClientRect().width;
-        var aboutHeight = aboutWidth * sectionHeightToWidthRatio;
+        var aboutHeight = aboutWidth * aboutHeightToWidthRatio;
 
         news.style.height = String(newsHeight) + "px";
         about.style.height = String(aboutHeight) + "px";
