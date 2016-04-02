@@ -25,16 +25,21 @@ Class MainPageView extends View {
 	private function displayNextGig() {
 
 		$nextGig = $this->_model->getNextGig();
-		$gigDate = $this->_model->getDateAsDayAndMonth($nextGig);
-		$venue = $this->orangeBrown($nextGig->Venue);
 
-		$this->openRow();
-		$this->printColumn("12",
-						   "li", 
-						   "$gigDate - $venue, $nextGig->City &raquo", 
-						   array('id' 		=> 'next-gig',
-								 'class' 	=> 'text-center lato gig list-group-item'));
-		$this->closeRow();
+		if($nextGig != null) {
+			
+			$gigDate = $this->_model->getDateAsDayAndMonth($nextGig);
+			$venue = $this->orangeBrown($nextGig->Venue);
+
+			$this->openRow();
+			$this->printColumn("12",
+							   "li", 
+							   "$gigDate - $venue, $nextGig->City &raquo", 
+							   array('id' 		=> 'next-gig',
+									 'class' 	=> 'text-center lato gig list-group-item'));
+			$this->closeRow();
+			
+		}
 
 	}
 
