@@ -148,8 +148,10 @@ body {
 
 #heading-container {
 
-    border-top: 0.5px solid #eaeaea;
-    border-right: 0.5px solid #eaeaea;
+    /*border-top: 0.5px solid #eaeaea;*/
+    border-top: 0.5px solid #000000;
+    /*border-right: 0.5px solid #eaeaea;*/
+    border-right: 0.5px solid #000000;
     height: 100%;
     padding-top: 1%;
 
@@ -157,7 +159,8 @@ body {
 
 #social-media-container {
 
-    border-top: 0.5px solid #eaeaea;
+    /*border-top: 0.5px solid #eaeaea;*/
+    border-top: 0.5px solid #000000;
     height: 100%;
     padding: 1% 0% 1% 0%;
 }
@@ -215,21 +218,22 @@ body {
 
 .news-item {
 
-    background-color: #262626;
+    /*background-color: #262626;*/
+    background-color: rgba(38, 38, 38, 0.9);
     color: #f44843;
     padding: 2% 2% 2% 2%;
-    border-radius: 2px;
+    /*border-radius: 2px;*/
     float: left;
     height: 380px;
-    /*width: 49.75%;*/
-    width: 60%;
+    /*width: 60%;*/
+    width: 90%;
     overflow-y: scroll;
     /*width: 50%;
     margin-left: 25%;
     margin-right: 25%;*/
-webkit-box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
+/*webkit-box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
 -moz-box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
-box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
+box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);*/
 
 
 }
@@ -270,7 +274,7 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
     color: #ffffff;
     background-color: #1a1a1a;
     padding: 2% 2% 2% 2%;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     border: 1px solid #333333;
 
 }
@@ -392,9 +396,17 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
     font-weight: 300;
 }
 
-#dropdown-menu-button {
+#dropdown-menu-button, #large-dropdown-menu-button {
+	font-family: "Cabin Sketch"; 	
+	color: #f44843;
     cursor: pointer;
     width: 25%;
+}
+
+#large-dropdown-menu-button {
+
+	font-size: 20pt;
+
 }
 
 #dropdown-menu-button:hover {
@@ -467,7 +479,7 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);
     color: #ffffff;
     background-color: #1a1a1a;
     padding: 2% 2% 2% 2%;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     border: 1px solid #333333;
     margin-bottom: 2%;
 

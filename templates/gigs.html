@@ -1,0 +1,54 @@
+<!--<div class="row">
+	<div id="shows" class="section">
+		<div class="row">
+			<div class="col-md-12"><h1 class="text-center section-heading">Konserter</h1></div>
+		</div>
+		<div class="gig-parent">
+			<?php $this->displayGigs(); ?>
+		</div>
+	</div>
+</div>-->
+
+<div class="row">
+	<div id="shows" class="section">
+		<div class="row">
+			<div class="col-md-12"><h1 class="text-center section-heading">Konserter</h1></div>
+		</div>
+		<div class="gig-parent">
+			<div class="row">
+				<div class="col-md-12">
+					<li id="next-gig" class="text-center lato gig list-group-item">{{ nextgig.Date }} - {{ nextgig.Venue }}, {{ nextgig.City }}</li>
+				</div>
+			</div>
+
+			{% for upcomingGig in upcomingGigs %}
+				<div class="row">
+					<div class="col-md-12">
+						<li class="text-center lato gig upcoming-gig list-group-item">{{ upcomingGig.Date }} - {{ upcomingGig.Venue }}, {{ upcomingGig.City }}</li>
+					</div>
+				</div>
+			{% endfor %}
+
+		      	<div class="row"> 
+				<div class="col-md-12">
+					<h5 id="dropdown-menu-button">Tidigare spelningar &raquo</h5>
+				</div>	
+			</div>
+			
+			{% for year, gigs in playedGigs %}
+				<div class="row">
+					<div class="col-md-2">
+						<h5 class="dropdown-menu-item">{{ year }}</h5>
+					</div>
+				</div>
+				{% for gig in gigs %}	
+					<div class="row">
+						<div class="col-md-3">
+							<li class="lato gig list-group-item dropdown-menu-item">{{ gig.Date }} - <span class="orange-brown">{{ gig.Venue }}</span>, {{ gig.City }}</li>
+						</div>
+					</div>
+				{% endfor%}
+			{% endfor %}
+		</div>
+	</div>
+</div>

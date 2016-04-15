@@ -94,13 +94,13 @@ window.onload = function() {
     function moveBorderDown(element) {
 
         element.style.borderTop = "none";
-        element.style.borderBottom = "0.5px solid #eaeaea";
+        element.style.borderBottom = "0.5px solid #000000";
 
     }
 
     function moveBorderUp(element) {
 
-        element.style.borderTop = "0.5px solid #eaeaea";
+        element.style.borderTop = "0.5px solid #000000";
         element.style.borderBottom = "";        
 
     }

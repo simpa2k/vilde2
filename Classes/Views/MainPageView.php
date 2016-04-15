@@ -3,7 +3,9 @@
 require_once("Classes/Views/View.php");
 
 Class MainPageView extends View {
-
+	
+	private $_noGigsToDisplay = false;
+		
 	private function orangeBrown($content) {
 
 		return "<span class='orange-brown'>$content</span>";
@@ -33,12 +35,16 @@ Class MainPageView extends View {
 
 			$this->openRow();
 			$this->printColumn("12",
-							   "li", 
-							   "$gigDate - $venue, $nextGig->City &raquo", 
-							   array('id' 		=> 'next-gig',
-									 'class' 	=> 'text-center lato gig list-group-item'));
+					   		   "li", 
+					   		   "$gigDate - $venue, $nextGig->City &raquo", 
+					   		   array('id' 	 => 'next-gig',
+						 			 'class' => 'text-center lato gig list-group-item'));
 			$this->closeRow();
 			
+		} else {
+
+			$this->_noGigsToDisplay = true;
+
 		}
 
 	}
@@ -58,9 +64,9 @@ Class MainPageView extends View {
 			
 			$this->openRow();
 			$this->printColumn("12",
-								"li", 
-								"$gigDate - $venue, $gig->City", 
-								array('class' => 'text-center lato gig upcoming-gig list-group-item'));
+					   "li", 
+					   "$gigDate - $venue, $gig->City", 
+					   array('class' => 'text-center lato gig upcoming-gig list-group-item'));
 			$this->closeRow();
 			//echo "</ul>";
 
@@ -73,8 +79,10 @@ Class MainPageView extends View {
 		$years = $this->_model->getGigYears();
 		$playedGigs = $this->_model->getPlayedGigs();
 		
+		$appropriateClass = $this->_noGigsToDisplay ? 'large-dropdown-menu-button' : 'dropdown-menu-button';
+
 		$this->openRow();
-		$this->printColumn("12", "h5", "Tidigare spelningar &raquo", array('id' => 'dropdown-menu-button'));
+		$this->printColumn("12", "h5", "Tidigare spelningar &raquo", array('id' => $appropriateClass));
 		$this->closeRow();
 
 		foreach($playedGigs as $year => $index) {
@@ -112,7 +120,7 @@ Class MainPageView extends View {
 
 		echo "<div id='description'>";
 		$this->printElement("div", "<p class='drop-cap'>V</p>", array('class' => 'drop-cap-container'));
-		$this->printElement("p", "$description->Beskrivning", array('class' => 'large-text'));
+		$this->printElement("p", "$description", array('class' => 'large-text'));
 		echo "</div>";
 
 	}
