@@ -6,7 +6,7 @@ require_once("Classes/Views/MainPageView.php");
 require_once('core/init.php');
 require_once 'vendor/autoload.php';
 
-$loader = new Twig_Loader_FileSystem('templates/');
+$loader = new Twig_Loader_Filesystem('templates/');
 $twig = new Twig_Environment($loader, array('debug' => true));
 
 $twig->addExtension(new Twig_Extension_Debug());
