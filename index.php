@@ -36,7 +36,39 @@ echo $twig->render("alternatemainpage.html", array(
 				'Venue' => 'Simons födelsedag',
 				'City' => 'Stockholm'
 			),	
-	'upcomingGigs' 	=> $model->getUpcomingGigs(),
+	'upcomingGigs' 	=> array(
+				'0' => array(
+					'Date' => '1/6',
+					'Venue' => 'Simons födelsedag',
+					'City' => 'Stockholm' 
+				),
+				'1' => array(
+					'Date' => '2/6',
+					'Venue' => 'Simons födelsedag',
+					'City' => 'Stockholm' 
+				),
+				'2' => array(
+					'Date' => '3/6',
+					'Venue' => 'Simons födelsedag',
+					'City' => 'Stockholm' 
+				),
+				'3' => array(
+					'Date' => '4/6',
+					'Venue' => 'Simons födelsedag',
+					'City' => 'Stockholm' 
+				),
+				'4' => array(
+					'Date' => '5/6',
+					'Venue' => 'Simons födelsedag',
+					'City' => 'Stockholm' 
+				),
+				'5' => array(
+					'Date' => '6/6',
+					'Venue' => 'Simons födelsedag',
+					'City' => 'Stockholm' 
+				),
+
+			),
 	'playedGigs' 	=> $model->getPlayedGigs(),
 	'contactInformation' => $model->getContactInformation()
 ));

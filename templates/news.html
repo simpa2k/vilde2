@@ -32,7 +32,9 @@
 					</div>
 					<div class="col-md-6 news-item">
 						<div class="box-header"><p class="red">Kalender</p></div>
-						<p></p>
+						{% for gig in upcomingGigs %}
+						<p class="red">{{gig.Date}} - {{gig.Venue}}, <span class="orange-brown">{{gig.City}}</span></p>
+						{% endfor %}
 					</div>
 				</div>
 				<div class="row">
