@@ -31,7 +31,11 @@ echo $twig->render("alternatemainpage.html", array(
 				'Review' => "Vilde släpper in världen i sin svenska folkmusik. De påminner om de där gatumusikanterna som man snubblade över någonstans i Europa. Gatumusikanterna som man aldrig glömde.",
 				'Info' 	 => "UNT 2011-08-10"
 			), 
-	'nextGig' 	=> $model->getNextGig(),
+	'nextGig' 	=> array(
+				'Date' => '1/6',
+				'Venue' => 'Simons födelsedag',
+				'City' => 'Stockholm'
+			),	
 	'upcomingGigs' 	=> $model->getUpcomingGigs(),
 	'playedGigs' 	=> $model->getPlayedGigs(),
 	'contactInformation' => $model->getContactInformation()

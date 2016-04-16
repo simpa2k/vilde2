@@ -204,6 +204,19 @@ body {
     /*padding: 0% 1% 1% 1%;*/
 }
 
+.black-box {
+
+	background-color: rgba(38, 38, 38, 0.9);	
+	border: 1px solid #333333;
+}
+
+.box-header {
+
+	font-size: 18pt;
+	border-bottom: 1px solid #333333;
+
+}
+
 #news {
 
     background-color: #f3f3f1;
@@ -212,7 +225,7 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     /*height: 1000px;*/
-    padding: 10% 10% 0% 15%;
+    padding: 15% 10% 0% 15%;
 
 }
 
@@ -226,8 +239,9 @@ body {
     float: left;
     height: 380px;
     /*width: 60%;*/
-    width: 90%;
-    overflow-y: scroll;
+    width: 100%;
+    overflow-y: auto;
+    border: 1px solid #333333;
     /*width: 50%;
     margin-left: 25%;
     margin-right: 25%;*/
@@ -241,6 +255,14 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);*/
 .news-item p {
 
     /*font-size: 30pt;*/
+
+}
+
+#news #next-gig {
+	
+    margin-top: 0.5%;
+    background-color: rgba(38, 38, 38, 0.9);
+    border: 1px solid #333333;
 
 }
 

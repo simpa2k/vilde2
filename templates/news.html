@@ -24,13 +24,27 @@
 	<div id="news" class="section">
 		
 		<div class="row">
-			<div class="col-md-12"><h1 class="section-heading">Nyheter</h1></div>
-		</div>
-
-		<div class="row">
-			
-			<div class="news-item">
-				<p class="large-text">{{ news }}</p>
+			<div class="news-container">	
+				<div class="row">
+					<div class="col-md-6 news-item">
+						<div class="box-header"><p class="red">Nyheter</p></div>
+						<p class="large-text">{{ news }}</p>
+					</div>
+					<div class="col-md-6 news-item">
+						<div class="box-header"><p class="red">Kalender</p></div>
+						<p></p>
+					</div>
+				</div>
+				<div class="row">
+					<div id="next-gig" class="text-center lato gig">
+						<div class="box-header"><p class="red">Nästa viktiga grej:</p></div>
+						<p class="red">{{ nextGig.Date }} - {{ nextGig.Venue }}, <span class="orange-brown">{{ nextGig.City }}</span></p>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="black-box text-center lato"><p class="red">Klicka för att se var vi har spelat tidigare</p></div>
+				</div>
 			</div>
 			
 		</div>
