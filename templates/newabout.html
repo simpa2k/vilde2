@@ -1,0 +1,40 @@
+<div class="row">
+	<div id="about" class="section">
+		<div class="row">
+			<div class="col-md-8">
+				<div id="description">
+					<div class="box-header"><h1 class="section-heading">Om Vilde</h1></div>
+					<div class="drop-cap-container"><p class="drop-cap">V</p></div>
+					<p class="large-text">{{ description }}</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div id="quotes">
+					<blockquote>
+						<p>{{ quote.Review }}</p>
+						<footer class="review-info">{{ quote.Info }}</footer>
+					</blockquote>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					{% for member in members %}
+						<div class="col-md-4"> 
+							<p class="large-text member">{{member.Firstname}} {{member.Lastname}} - <span class="red">{{member.Instrument}}</span></p>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+			</div>
+		</div>
+	</div>
+</div>

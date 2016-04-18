@@ -282,9 +282,9 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);*/
 
 #about {
     /*clear: right;*/
-    padding: 12% 20% 0% 20%;
+    /*padding: 12% 20% 0% 20%;*/
     background-color: #0d0d0d;
-    background-image: url(/static/images/rootsthin_medium.png);
+    /*background-image: url(/static/images/rootsthin_medium.png);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -297,7 +297,10 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);*/
     background-color: #1a1a1a;
     padding: 2% 2% 2% 2%;
     /*border-radius: 3px;*/
-    border: 1px solid #333333;
+    border-width: 1px;
+    border-color: #333333;
+    border-style: none solid solid;
+    margin-bottom: 0%;
 
 }
 
@@ -503,7 +506,7 @@ box-shadow: 3px 3px 5px 0px rgba(156,156,156,1);*/
     padding: 2% 2% 2% 2%;
     /*border-radius: 3px;*/
     border: 1px solid #333333;
-    margin-bottom: 2%;
+    /*margin-bottom: 2%;*/
 
 }
 

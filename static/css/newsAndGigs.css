@@ -1,0 +1,93 @@
+#news-and-gigs .box-header {
+
+	font-size: 52pt;
+
+}
+
+.container-left, .container-right {
+
+	display: inline-block;
+
+}
+
+.container-left {
+
+	float: left;
+	width: 40%;
+
+}
+
+.container-left .box-header {
+
+
+}
+
+.container-right {
+
+	width: 60%;
+
+}
+
+#news-test, #quote-test {
+
+	height: 500px;
+
+}
+
+#news-test, #quote-test, #gigs-test {
+
+	/*background-color: rgba(38, 38, 38, 0.9);*/
+	border-width: 1px;
+	border-style: solid solid none;
+	border-color: #333333;
+
+}
+
+#news-test {
+
+
+}
+
+#quote-test {
+
+	background-image: url(/static/images/treerightbranch.png);
+	background-size: cover;
+
+}
+
+#gigs-test {
+
+	background-color: #262626;
+	height: 1000px;
+	overflow-y: auto;
+
+}
+
+#gigs-test:hover .gig-test {
+	
+   -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0.7;
+
+}
+
+.gig-test {
+
+	font-size: 26pt;
+	padding: 2% 2% 2% 2%;
+	margin: 1% 1% 1% 1%;
+	color: #ffffff;
+	border: 1px solid #333333;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+
+}
+
+.gig-test:hover {
+	
+   -webkit-transform: scale(1.0) !important;
+    transform: scale(1.0) !important;
+    opacity: 1.0 !important;
+
+}

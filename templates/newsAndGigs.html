@@ -1,0 +1,18 @@
+<div id="news-and-gigs">
+	<div class="row">
+		<div class="container-left">
+			<div id="news-test">
+				<div class="box-header"><p class="red">Nyheter</p></div>
+			</div>
+			<div id="quote-test"></div>
+		</div>
+		<div class="container-right">
+			<div id="gigs-test">
+				<div class="box-header"><p class="red">Kalender</p></div>
+				{% for gig in upcomingGigs %}
+				<div class="gig-test"><p class="red">{{gig.Date}} - <span class="orange-brown">{{gig.Venue}}</span>, {{gig.City}}</p></div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
